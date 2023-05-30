@@ -5,8 +5,124 @@
 @import "tailwindcss/utilities";
 
 body {
-  margin: 0;
-  font-family: "Quicksand", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: "Quicksand", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+* {
+	scroll-behavior: smooth !important;
+}
+
+body {
+	margin: 0;
+	background-color: #111827;
+	font-family: "Quicksand", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.center-between {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.material-symbols-outlined {
+	font-variation-settings: "FILL" 0, "wght" 100, "GRAD" 200, "opsz" 48;
+}
+
+.value-icon {
+	font-size: 48px !important;
+}
+
+.data-icon {
+	font-size: 35px !important;
+}
+
+.arrow-icon {
+	font-size: 16px !important;
+}
+
+.icon {
+	filter: brightness(0) invert(1);
+}
+
+/* ---------- scrollbar styles ------------ */
+/* Works on Firefox */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: #555;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 8px;
+	z-index: 1000;
+}
+
+*::-webkit-scrollbar-track {
+	background: inherit;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: rgb(189, 189, 189);
+	border-radius: 20px;
+}
+
+@media (max-width: 500px) {
+	*::-webkit-scrollbar {
+		width: 3px;
+	}
+	*::-webkit-scrollbar-thumb {
+		background-color: rgb(226, 226, 226);
+		border-radius: 20px;
+	}
+}
+
+/* ----------- Alert overrides ------------ */
+.Toastify__toast-body > div:last-child {
+	font-family: "Quicksand", sans-serif !important;
+	font-size: 0.85rem !important;
+}
+
+.Toastify__progress-bar-theme--colored {
+	background-color: #fff !important;
+}
+
+.Toastify__progress-bar {
+	height: 3px !important;
+}
+
+.Toastify__toast-theme--colored.Toastify__toast--warning {
+	background-color: #d17000 !important;
+}
+
+.Toastify__toast-theme--colored.Toastify__toast--info {
+	background-color: rgb(14, 62, 206) !important;
+}
+
+/* ---------- tooltip overrides ----------- */
+#my-tooltip {
+	background-color: black !important;
+	z-index: 100 !important;
+}
+
+/* ---------- Editor overrides  ----------- */
+.ql-editor {
+	min-height: 400px;
+	color: #fff !important;
+	font-family: "Quicksand", sans-serif;
+}
+
+.ql-toolbar.ql-snow {
+	border-color: #98a1ab !important;
+	background-color: #e0e0e0 !important;
 }

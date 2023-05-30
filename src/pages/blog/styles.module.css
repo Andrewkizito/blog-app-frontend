@@ -1,0 +1,51 @@
+.details h3 {
+	font-size: 1.3rem;
+	font-weight: 600;
+}
+.details img {
+	max-width: 100%;
+}
+.details ol,
+.details ul {
+	margin-top: 0.8rem;
+	margin-left: 1rem;
+	list-style: disc;
+}
+.details ol li,
+.details ul li {
+	margin-top: 0.5rem;
+	font-size: 0.95rem;
+}
+.details p {
+	font-size: 0.9rem !important;
+	margin-bottom: 0.5rem !important;
+	font-weight: 300;
+	color: #e8e8e8 !important;
+}
+.details p span {
+	font-weight: 300;
+	color: #e8e8e8 !important;
+}
+.details blockquote {
+	font-size: 1.4em;
+	color: #e8e8e8;
+	font-size: 0.95rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	padding: 1rem 20px 0.7rem 30px;
+	border-left: 3px solid #bf3654;
+	position: relative;
+	background: #ededed;
+}
+.details blockquote::before {
+	font-family: Arial;
+	content: "“";
+	color: #bf3654;
+	font-size: 2em;
+	position: absolute;
+	left: 10px;
+	top: 0px;
+}
+.details blockquote::after {
+	content: "";
+} /*# sourceMappingURL=styles.module.css.map */
