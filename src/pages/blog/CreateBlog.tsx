@@ -76,7 +76,7 @@ const CreateBlog = () => {
 		<div className="h-screen bg-gray-900 px-20">
 			<Fade>
 				<div className="py-5">
-					<BackButton to="/" title="Publish Blog Post" />
+					<BackButton to="/blog-manager" title="Publish Blog Post" />
 					<div
 						className="border-t border-t-gray-700 mt-3"
 						ref={(el) => (topEl.current = el)}

@@ -8,10 +8,10 @@ import api from "utils/axios.config"
 // Importing core components
 import { NavLink } from "react-router-dom"
 import { Spinner } from "react-activity"
+import Button from "components/ui/Button"
+import Container from "components/ui/Container"
 import Fade from "react-reveal/Fade"
 import Header from "components/ui/Header"
-import Container from "components/ui/Container"
-import Button from "components/ui/Button"
 
 const Posts = () => {
 	const [data, setData] = useState<Article[]>()

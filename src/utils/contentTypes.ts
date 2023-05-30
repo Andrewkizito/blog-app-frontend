@@ -1,4 +1,5 @@
 export interface Article {
+	readonly [key: string]: string
 	PK: string
 	SK: string
 	title: string
@@ -7,5 +8,4 @@ export interface Article {
 	author: string
 	date: string
 	image: string
-	timestamp: number
 }

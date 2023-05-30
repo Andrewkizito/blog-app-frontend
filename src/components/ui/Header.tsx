@@ -21,9 +21,9 @@ const Header: React.FC<HeaderProps> = (props) => {
 				<div className="center-between">
 					<h2 className="xl text-green-500">{props.title}</h2>
 					<NavLink
-						to={authStatus === "authenticated" ? "/create-blog" : "/auth"}
+						to={authStatus === "authenticated" ? "/blog-manager" : "/auth"}
 					>
-						<Button color="success" title="Add New" />
+						<Button color="success" title="Blog Manager" />
 					</NavLink>
 				</div>
 			</Container>
