@@ -32,7 +32,7 @@ const DeleteBlog: React.FC<Props> = (props) => {
 			const urls = [...extractUrls(content.data), props.item.image]
 
 			const token = (await Auth.currentSession()).getIdToken().getJwtToken()
-			const res = await api.delete("/", {
+			const res = await api.delete("/blog", {
 				data: {
 					PK: props.item.PK,
 					SK: props.item.SK,

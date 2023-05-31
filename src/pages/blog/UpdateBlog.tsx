@@ -60,8 +60,6 @@ const UpdateBlog = () => {
 			...generateUniqueValues(originalPost, form),
 			PK: originalPost.PK,
 			SK: originalPost.SK,
-			content: originalPost.content,
-			timestamp: originalPost.timestamp,
 		}
 
 		try {

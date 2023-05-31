@@ -23,7 +23,7 @@ const Header: React.FC<HeaderProps> = (props) => {
 					<NavLink
 						to={authStatus === "authenticated" ? "/blog-manager" : "/auth"}
 					>
-						<Button color="success" title="Blog Manager" />
+						<Button color="success" title="Admin" />
 					</NavLink>
 				</div>
 			</Container>

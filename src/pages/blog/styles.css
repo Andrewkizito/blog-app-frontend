@@ -1,3 +1,9 @@
+.details h2 {
+	font-size: 1.5rem;
+	font-weight: 500;
+	color: #e8e8e8;
+}
+
 .details h3 {
 	font-size: 1.3rem;
 	font-weight: 600;
@@ -15,6 +21,12 @@
 .details ul li {
 	margin-top: 0.5rem;
 	font-size: 0.95rem;
+	color: #e8e8e8 !important;
+}
+
+.details strong {
+	color: green !important;
+	font-weight: 500 !important;
 }
 .details p {
 	font-size: 0.9rem !important;
@@ -48,4 +60,4 @@
 }
 .details blockquote::after {
 	content: "";
-} /*# sourceMappingURL=styles.module.css.map */
+}

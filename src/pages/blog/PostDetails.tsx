@@ -14,7 +14,7 @@ import Container from "components/ui/Container"
 import Fade from "react-reveal/Fade"
 
 // Importing styles
-import styles from "./styles.module.css"
+import "./styles.css"
 
 const PostDetails = () => {
 	// Getting params
@@ -81,7 +81,7 @@ const PostDetails = () => {
 									alt=""
 								/>
 								<div
-									className={`${styles.details}`}
+									className="details"
 									dangerouslySetInnerHTML={{ __html: data.content }}
 								/>
 							</Container>

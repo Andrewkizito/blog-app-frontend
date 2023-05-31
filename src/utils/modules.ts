@@ -71,7 +71,6 @@ export const generateUniqueValues = (
 
 export const generateNumbers = (max: number): number[] => {
 	const nums: number[] = []
-	let num = 5
 	for (let i = 1; i <= max; i++) {
 		nums.push(i)
 	}
